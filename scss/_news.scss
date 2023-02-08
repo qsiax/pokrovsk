@@ -1,0 +1,116 @@
+.news {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: 200px;
+    }
+
+    &__sub {
+    }
+
+    &__category-wrapper {
+        display: flex;
+    }
+
+    &__category {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        padding: 19.5px 40.5px;
+        border-radius: 50px;
+        border: 1px solid $text-secondary;
+        transition: .3s ease;
+        margin-right: 20px;
+        margin-bottom: 80px;
+        cursor: pointer;
+        &:hover {
+            color: $main-color;
+            background: $text;
+            border: 1px solid $text;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__item-wrapper {
+    }
+
+    &__item {
+        width: 100%;
+        height: 175px;
+        border-radius: 50px;
+        border: 1px solid $text-secondary;
+        padding: 0px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        transition: .3s ease;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 80px;
+        }
+        &:hover {
+            background: $text;
+            color: $main-color;
+        }
+    }
+
+    &__item-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-date {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        margin-right: 40px;
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        max-width: 620px;
+    }
+
+    &__item-img {
+        width: 192px;
+        height: 135px;
+        border-radius: 10px;
+        margin-right: 79px;
+        background: url(/source/news-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__item-arrow {
+        transform: rotate(-90deg);
+        font-size: 48px;
+    }
+
+    &__btn {
+        max-width: 870px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-left: auto;
+    }
+
+    &__btn-arrow {
+        font-size: 24px;
+        margin-left: 10px;
+        transform: rotate(-90deg);
+    }
+}
+

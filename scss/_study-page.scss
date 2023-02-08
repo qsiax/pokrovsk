@@ -1,0 +1,270 @@
+.study {
+
+    &__container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__body {
+        margin-bottom: 990px;
+    }
+
+    &__head {
+        display: flex;
+        margin-bottom: 80px;
+    }
+
+    &__head-item {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        padding: 19.5px 40.5px;
+        color: $primary-color;
+        border: 1px solid $text-secondary;
+        border-radius: 50px;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: .3s ease;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            background: $text;
+            color: $main-color;
+            border: 1px solid $text;
+        }
+    }
+
+    &__content-wrapper {
+    }
+
+    &__content {
+        position: absolute;
+        width: 100%;
+        transition: .5s ease;
+        transform: translateX(120%);
+        &.active {
+            transform: translate(0);
+        }
+        &:first-child {
+            .study__item-wrapper {
+                .study__item-block {
+                    &:last-child {
+                        .study__item {
+                            width: 870px;
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            .study__item-wrapper {
+                .study__item-block {
+                    .study__item {
+                        width: 573px;
+                        height: 300px;
+                        .study__item-title {
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 120%;
+                            letter-spacing: -0.03em;
+                            text-transform: uppercase;
+                            max-width: 434px;
+                        }
+                    }
+                }
+            }
+        }
+        &:last-child {
+            .study__item-wrapper {
+                .study__item-block {
+                    .study__item {
+                        width: 336px;
+                        height: 193px;
+                    }
+                    &:last-child {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+    }
+
+    &__item-wrapper {
+    }
+
+    &__item-block {
+        display: flex;
+        justify-content: space-between;
+        &:first-child {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        width: 336px;
+        height: 300px;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px;
+        cursor: pointer;
+    }
+
+    &__item-long {
+        position: relative;
+        width: 1048px;
+        height: 300px;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px;
+        cursor: pointer;
+    }
+
+    &__item-text {
+        width: 336px;
+        height: 264px;
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: $text-secondary;
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 655px;
+    }
+
+    &__item-prepods {
+        margin-top: 104px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        color: $text-secondary;
+        span {
+            color: $text;
+        }
+    }
+
+    &__item-icon {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        font-size: 48px;
+        color: $primary-color;
+    }
+
+    &__item-hidden {
+        width: 336px;
+        height: 300px;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &__item-block-praktika {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__item-praktika {
+        position: relative;
+        width: 336px;
+        height: 193px;
+        border-radius: 25px;
+        padding: 40px;
+        border: 1px solid $text-secondary;
+        cursor: pointer;
+    }
+
+    &__item-praktika-text {
+        width: 336px;
+        height: 193px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: $text-secondary;
+        padding-top: 20px;
+    }
+
+    &__item-title-praktika {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+    }
+
+    &__item-block-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__item-group {
+        position: relative;
+        width: 336px;
+        height: 193px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $text-secondary;
+        cursor: pointer;
+        transition: .3s ease;
+        &.active {
+            border: 1px solid $text;
+            background: $text;
+            .study__item-title-group {
+                color: $main-color;
+                .study__item-title-group-icon {
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+
+    &__item-title-group {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: $primary-color;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-title-group-icon {
+        font-size: 48px;
+        margin-left: 10px;
+        transform: rotate(-90deg);
+        transition: .3s ease;
+    }
+
+    &__item-content-group {
+        position: absolute;
+        transform: translateX(100%);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        transition: .6s ease;
+        &.active {
+            transform: translateX(0%);  
+        }
+    }
+}

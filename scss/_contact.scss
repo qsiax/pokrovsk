@@ -1,0 +1,128 @@
+.contact {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: 100px;
+    }
+
+    &__sub {
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 80px;
+    }
+
+    &__content {
+        display: flex;justify-content: space-between;
+    }
+
+    &__block {
+    }
+
+    &__form {
+        input {
+            width: 870px;
+            height: 115px;
+            padding: 39.5px 30px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            border-radius: 25px;
+            margin-right: 20px;
+            border: 1px solid $text-secondary;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 150%;
+                letter-spacing: -0.03em;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+    }
+
+    &__form-block {
+        margin-bottom: 20px;
+        input {
+            width: 425px;
+            height: 115px;
+            padding: 39.5px 30px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            border-radius: 25px;
+            margin-right: 20px;
+            border: 1px solid $text-secondary;
+            &:last-child {
+                margin-right: 0;
+            }
+            &::placeholder {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 150%;
+                letter-spacing: -0.03em;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+    }
+
+    &__btn {
+        margin-top: 80px;
+        cursor: pointer;
+    }
+
+    &__btn-arrow {
+        transform: rotate(-90deg);
+        margin-left: 10px;
+        font-size: 24px;
+    }
+
+    &__block-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__info {
+    }
+
+    &__info-title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: $text-secondary;
+        margin-bottom: 40px;
+    }
+
+    &__info-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        max-width: 336px;
+    }
+
+    &__info-social-wrapper {
+        display: flex;
+    }
+
+    &__info-social {
+        font-size: 48px;
+        margin-right: 40px;
+        cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            color: $primary-color;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

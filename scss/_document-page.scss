@@ -1,0 +1,124 @@
+.document {
+
+    &__container {
+        position: relative;
+    }
+
+    &__body {
+        margin-bottom: 998px;
+    }
+    
+    &__head {
+        margin-bottom: 40px;
+        display: flex;
+    }
+
+    &__head-item {
+        padding: 19.5px 40px;
+        border-radius: 50px;
+        border: 1px solid $text-secondary;
+        margin-right: 20px;
+        cursor: pointer;
+        transition: .3s ease;
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            border: 1px solid $text;
+            background: $text;
+            .document__head-item-title {
+                color: $main-color;
+            }
+        }
+    }
+
+    &__head-item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: $primary-color;
+        transition: .3s ease;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 80px;
+        position: absolute;
+        transform: translateX(100%);
+        transition: .5s ease;
+        width: 100%;
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    &__item-wrapper {
+    }
+
+    &__item-block {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        width: 870px;
+        height: 114px;
+        border-radius: 50px;
+        border: 1px solid $text-secondary;
+        padding: 39px 38px;
+        margin-bottom: 21px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-nav {
+        color: $text-secondary;
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        margin-left: 2px;
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 660px;
+    }
+
+    &__item-icon {
+        font-size: 48px;
+        color: $primary-color;
+    }
+
+    &__arrow-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        display: none;
+    }
+
+    &__arrow-prev {
+        font-size: 48px;
+        transform: rotate(90deg);
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+    &__arrow-next {
+        font-size: 48px;
+        transform: rotate(-90deg);
+        margin-right: 40px;
+        cursor: pointer;
+    }
+}

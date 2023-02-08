@@ -1,0 +1,91 @@
+.sponsor {
+
+    &__container {
+
+    }
+
+    &__body {
+        margin-bottom: 200px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 80px;
+    }
+
+    &__content {
+
+        &:first-child {
+            .sponsor__item-wrapper {
+                .sponsor__item:first-child {
+                    .sponsor__item-img {
+                        background: url(/source/sponsors-img02.svg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            .sponsor__item-wrapper {
+                .sponsor__item:nth-child(2) {
+                    .sponsor__item-img {
+                        background: url(/source/sponsors-img02.svg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            .sponsor__item-wrapper {
+                .sponsor__item:nth-child(3) {
+                    .sponsor__item-img {
+                        background: url(/source/sponsors-img02.svg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        &:last-child {
+            .sponsor__item-wrapper {
+                .sponsor__item:nth-child(2) {
+                    .sponsor__item-img {
+                        background: url(/source/sponsors-img02.svg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        width: 336px;
+        height: 135px;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__item-img {
+        width: 200px;
+        height: 98px;
+        background: url(/source/sponsors-img.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

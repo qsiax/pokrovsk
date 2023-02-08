@@ -1,0 +1,35 @@
+.footer {
+    background: $text;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        padding: 68.5px 0px;
+        color: $main-color;
+    }
+
+    &__arrow-wrapper {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: $main-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__arrow {
+        transform: rotate(180deg);
+        font-size: 32px;
+    }
+}

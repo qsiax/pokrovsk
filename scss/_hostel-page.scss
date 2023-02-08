@@ -1,0 +1,224 @@
+.hostel-banner {
+
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 200px;
+    }
+
+    &__block {
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-top: 40px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        max-width: 870px;
+        margin-top: 40px;
+        span {
+            color: $primary-color;
+        }
+    }
+
+    &__num-wrapper {
+        display: flex;
+        margin-top: 411px;
+    }
+
+    &__num-item {
+        &:first-child {
+            margin-right: 124px;
+        }
+    }
+
+    &__num {
+        font-weight: 400;
+        font-size: 75px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: $primary-color;
+        margin-bottom: 10px;
+    }
+
+    &__num-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+    }
+
+    &__img {
+        width: 870px;
+        height: 770px;
+        background: url(/source/hostel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+    }
+}
+
+
+.hostel-place {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: 200px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+        max-width: 870px;
+    }
+
+    &__content {
+    }
+
+    &__item-wrapper {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        &:last-child {
+            .hostel-place__item {
+                width: 870px;
+                height: 300px;
+            }
+        }
+    }
+
+    &__item {
+        width: 870px;
+        height: 460px;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px 40px 0px 40px;
+    }
+
+    &__item-head {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    &__item-num {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: $primary-color;
+        margin-right: 10px;
+        min-width: 44px;
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 740px;
+        span {
+            color: $text-secondary;
+        }
+    }
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        color: $text-secondary;
+    }
+}
+
+
+.hostel-settle {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: 200px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        max-width: 870px;
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-wrapper {
+        &:last-child {
+            .hostel-settle__item {
+                height: 300px;
+                &:first-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &__item {
+        width: 870px;
+        height: 620px;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px 40px 0px 40px;
+    }
+
+    &__item-head {
+        margin-bottom: 40px;
+        display: flex;
+    }
+
+    &__item-num {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        color: $primary-color;
+        margin-right: 10px;
+        min-width: 44px;
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        span {
+            color: $text-secondary;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        color: $text-secondary;
+    }
+}
