@@ -16,9 +16,17 @@
         }
     }
 
-    &__title {
+    &__sub {
         font-weight: 400;
         font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 50px;
         line-height: 100%;
         letter-spacing: -0.03em;
         margin-bottom: 40px;
@@ -30,5 +38,27 @@
         line-height: 150%;
         letter-spacing: -0.03em;
         max-width: 870px;
+    }
+
+    &__decore {
+        font-weight: 700;
+        font-size: 500px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        color: $main-color;
+        position: absolute;
+        bottom: -70px;
+        left: -965px;
+        min-width: 10636px;
+        animation: decoreAnimation 30s linear infinite;
+    }
+}
+
+@keyframes decoreAnimation {
+    0% {
+        left: -965px; 
+    }
+    100% {
+        left: -4000px;
     }
 }

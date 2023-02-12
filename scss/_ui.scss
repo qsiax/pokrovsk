@@ -1,5 +1,5 @@
 $main-color: #ffff;
-$primary-color: #FF690A;
+$primary-color: #537EE7;
 $secondary-color: #632EF2;
 $tertiary-color: none;
 $text: #000000;
@@ -61,7 +61,7 @@ $transition: all .5s ease;
     justify-content: space-between;
     margin-bottom: 100px;
     .heading {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 75px;
         line-height: 90%;
         letter-spacing: -0.03em;
@@ -70,6 +70,7 @@ $transition: all .5s ease;
 
     .head-btn-wrapper {
         display: flex;
+        align-items: flex-end;
         .head-btn {
             width: 75px;
             height: 75px;
@@ -79,10 +80,6 @@ $transition: all .5s ease;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            &:nth-child(1) {
-                background: $primary-color;
-                margin-right: 10px;
-            }
             .head-btn-icon {
                 font-size: 32px;
                 color: $main-color;

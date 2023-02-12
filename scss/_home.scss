@@ -15,11 +15,12 @@
     }
 
     &__title {
-        font-weight: 400;
-        font-size: 75px;
+        font-weight: 500;
+        font-size: 72px;
         line-height: 90%;
         letter-spacing: -0.03em;
         text-transform: uppercase;
+        margin-bottom: 20px;
     }
 
     &__block {
@@ -28,11 +29,10 @@
 
     &__text {
         font-weight: 400;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 120%;
+        max-width: 870px;
         color: $text-secondary;
-        max-width: 530px;
-        margin-right: 180px;
     }
 
     &__btn-wrapper {
@@ -48,15 +48,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &:nth-child(1) {
-            margin-right: 10px;
-            background: $primary-color;
-        }
-    }
-
-    &__eye {
-        font-size: 32px;
-        color: $main-color;
     }
 
     &__arrow {

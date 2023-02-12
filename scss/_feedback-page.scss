@@ -1,0 +1,149 @@
+.feedback {
+    &__container {
+    }
+
+    &__body {
+        height: 1080px;
+        background: url(/source/feedback-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 80px;
+        margin-bottom: 200px;
+        * {
+            color: $main-color;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 75px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        max-width: 790px;
+        margin-bottom: 200px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item-num {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        margin-right: 10px;
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+    }
+
+    &__form {
+        * {
+            color: $text;
+        }
+        select {
+            width: 100%;
+            height: 115px;
+            background: $main-color;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            &::after {
+                border: none;
+            }
+        }
+        input {
+            width: 100%;
+            height: 115px;
+            border-radius: 25px;
+            background: $main-color;
+            padding-left: 30px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            color: $text;
+            &:hover::placeholder {
+                color: $text;
+            }
+            &::placeholder {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 150%;
+                letter-spacing: -0.03em;
+                color: $text-secondary;
+                transition: .3s ease;
+            }
+        }
+    }
+
+    &__form-wrapper {
+        display: flex;
+        margin-bottom: 20px;
+        input {
+            width: 385px;
+            height: 115px;
+            border-radius: 25px;
+            background: $main-color;
+            padding-left: 30px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            color: $text;
+
+            &:last-child {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__form-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        color: $main-color;
+        margin: 40px 0px;
+        span {
+            text-decoration: underline;
+            color: $main-color;
+        }
+    }
+
+    &__btn {
+        color: $main-color;
+    }
+
+    &__form-btn-arrow {
+        color: $main-color;
+        margin-left: 10px;
+        font-size: 24px;
+        transform: rotate(-90deg);
+    }
+}

@@ -4,14 +4,14 @@
     }
 
     &__body {
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
 
     &__sub {
     }
 
     &__title {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 50px;
         line-height: 100%;
         letter-spacing: -0.03em;
@@ -37,12 +37,17 @@
             border-radius: 25px;
             margin-right: 20px;
             border: 1px solid $text-secondary;
+            &:hover::placeholder {
+                color: $text;
+            }
             &::placeholder {
                 font-weight: 400;
                 font-size: 24px;
                 line-height: 150%;
                 letter-spacing: -0.03em;
                 font-family: 'Inter', sans-serif;
+                color: $text-secondary;
+                transition: .3s ease;
             }
         }
     }
@@ -60,6 +65,9 @@
             border-radius: 25px;
             margin-right: 20px;
             border: 1px solid $text-secondary;
+            &:hover::placeholder {
+                color: $text;
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -69,6 +77,8 @@
                 line-height: 150%;
                 letter-spacing: -0.03em;
                 font-family: 'Inter', sans-serif;
+                color: $text-secondary;
+                transition: .3s ease;
             }
         }
     }
@@ -90,39 +100,9 @@
         margin-bottom: 80px;
     }
 
-    &__info {
-    }
-
-    &__info-title {
-        font-weight: 400;
-        font-size: 50px;
-        line-height: 100%;
-        letter-spacing: -0.03em;
-        color: $text-secondary;
-        margin-bottom: 40px;
-    }
-
-    &__info-text {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 120%;
-        max-width: 336px;
-    }
-
-    &__info-social-wrapper {
-        display: flex;
-    }
-
-    &__info-social {
-        font-size: 48px;
-        margin-right: 40px;
-        cursor: pointer;
-        transition: .3s ease;
-        &:hover {
-            color: $primary-color;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
+    &__map {
+        width: 870px;
+        height: 600px;
+        border-radius: 50px;
     }
 }

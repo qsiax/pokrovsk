@@ -42,7 +42,7 @@
         height: 115px;
         border-radius: 50px;
         border: 1px solid $text-secondary;
-        color: $primary-color;
+        color: $text;
         font-weight: 400;
         font-size: 50px;
         line-height: 150%;
@@ -53,8 +53,12 @@
         cursor: pointer;
         margin-bottom: 20px;
         transition: .5s ease;
+        transition: color .2s ease;
+        &:hover {
+            color: $primary-color;
+        }
         &.active {
-            background: $text;
+            background: $primary-color;
             color: $main-color;
             .directions__item-arrow {
                 transform: rotate(0deg);

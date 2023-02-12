@@ -28,6 +28,6 @@ VanillaTilt.init(document.querySelectorAll(".social__item"), {
 	speed: 400,
 	glare: true,
 	"max-glare": 1,
-	reverse: true,
+	// reverse: true,
 	scale: 0.95,
 });
