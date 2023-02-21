@@ -35,7 +35,6 @@
             line-height: 150%;
             letter-spacing: -0.03em;
             border-radius: 25px;
-            margin-right: 20px;
             border: 1px solid $text-secondary;
             &:hover::placeholder {
                 color: $text;
@@ -54,6 +53,8 @@
 
     &__form-block {
         margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
         input {
             width: 425px;
             height: 115px;
@@ -63,7 +64,7 @@
             line-height: 150%;
             letter-spacing: -0.03em;
             border-radius: 25px;
-            margin-right: 20px;
+            // margin-right: 20px;
             border: 1px solid $text-secondary;
             &:hover::placeholder {
                 color: $text;
@@ -83,9 +84,36 @@
         }
     }
 
+    &__checkbox-wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: 42px;
+        margin-bottom: 41px;
+        input {
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+            padding: 0;
+            cursor: pointer;
+            background: none;
+            margin-right: 10px;
+        }
+    }
+
+    &__checkbox-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        span {
+            color: $primary-color;
+        }
+    }
+
     &__btn {
         margin-top: 80px;
         cursor: pointer;
+        max-width: 870px;
     }
 
     &__btn-arrow {
@@ -104,5 +132,6 @@
         width: 870px;
         height: 600px;
         border-radius: 50px;
+        overflow: hidden;
     }
 }

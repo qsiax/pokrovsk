@@ -1,114 +1,130 @@
 .college {
-
-		&__container {
-		}
-
-		&__body {
-			margin-bottom: 200px;
-		}
-
-		&__content {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		&__block {
-		}
-
-		&__title {
-			font-weight: 400;
-			font-size: 50px;
-			line-height: 100%;
-			letter-spacing: -0.03em;
-			margin-bottom: 40px;
-			margin-top: 40px;
-		}
-
-		&__text {
-			font-weight: 400;
-			font-size: 24px;
-			line-height: 150%;
-			letter-spacing: -0.03em;
-		}
-
-		&__img {
-			width: 870px;
-			height: 770px;
-			border-radius: 25px;
-			background: url(/source/about-page.jpg);
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-}
-
-
-.team {
-
+	margin-bottom: 200px;
 	&__container {
-		overflow: visible;
 	}
 
 	&__body {
-		margin-bottom: 400px;
 	}
 
 	&__title {
-		font-weight: 400;
-		font-size: 50px;
-		line-height: 100%;
+		font-weight: 500;
+		font-size: 72px;
+		line-height: 90%;
 		letter-spacing: -0.03em;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 120%;
+		color: $text-secondary;
+		max-width: 870px;
+		margin-bottom: 40px;
+	}
+
+	&__img {
+		width: 1920px;
+		height: 550px;
+		border-radius: 25px;
+		background: url(/source/college-img.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin: 0 auto;
+	}
+}
+
+.college-info {
+
+	&__container {
+	}
+
+	&__body {
+		margin-bottom: 1765px;
+	}
+
+	&__head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		margin-bottom: 80px;
+	}
+
+	&__head-item-wrapper {
+		display: flex;
+	}
+
+	&__head-item {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 150%;
+		letter-spacing: -0.03em;
+		text-transform: uppercase;
+		padding: 19.5px 30px;
+		border-radius: 50px;
+		margin-right: 20px;
+		color: $primary-color;
+		border: 1px solid $text-secondary;
+		cursor: pointer;
+		transition: .3s ease;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			background: $text;
+			color: $main-color;
+			border: 1px solid $text;
+		}
+	}
+
+	&__arrow-wrapper {
+	}
+
+	&__arrow-prev {
+	}
+
+	&__arrow-next {
 	}
 
 	&__content {
 	}
 
-	&__item-wrapper {
+	&__content-item {
+		position: absolute;
+		transform: translateX(100%);
+		opacity: 0;
+		transition: .5s ease;
+		&.active {
+			transform: translateX(0%);
+			opacity: 1;
+		}
+	}
+
+	&__content-item-title {
+		font-weight: 500;
+		font-size: 50px;
+		line-height: 100%;
+		letter-spacing: -0.04em;
+		margin-bottom: 40px;
+	}
+
+	&__content-item-wrapper {
 		display: flex;
 		justify-content: space-between;
-		&:first-child {
-			margin-bottom: 20px;
+	}
+
+	&__content-item-block {
+		max-width: 870px;
+		&:nth-child(1) {
+			margin-right: 21px;
 		}
 	}
 
-	&__item {
-		width: 336px;
-		height: 400px;
-		border-radius: 25px;
-		border: 1px solid $text-secondary;
-		padding: 40px;
-		cursor: pointer;
-		transition: .3s ease;
-		&:hover {
-			transform: scale(1.02);
-		}
-	}
-
-	&__img {
-	}
-
-	&__role {
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 120%;
-		color: $text-secondary;
-		margin-bottom: 20px;
-		margin-top: 220px;
-	}
-
-	&__name {
+	&__content-item-text {
 		font-weight: 400;
 		font-size: 24px;
-		line-height: 120%;
+		line-height: 150%;
 		letter-spacing: -0.03em;
-	}
-
-	&__item-text {
-		width: 336px;
-		height: 400px;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 120%;
-		color: $text-secondary;
 	}
 }

@@ -108,17 +108,11 @@
     &__item {
         width: 240px;
         height: 92px;
-        border-radius: 15px;
-        background: #1B1B1B;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         margin-right: 20px;
-        transition: .3s ease;
-        &:hover {
-            transform: scale(1.02);
-        }
         &:last-child {
             margin-right: 0;
         }
@@ -170,9 +164,21 @@
     }
 
     &__social-wrapper {
+        display: flex;
     }
 
     &__social {
+        font-size: 48px;
+        color: $main-color;
+        cursor: pointer;
+        margin-right: 40px;
+        transition: .3s ease;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     &__bottom {
