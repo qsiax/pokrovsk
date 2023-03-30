@@ -47,3 +47,28 @@ const scheduleSlider = new Swiper('.schedule__slider', {
 	// 	}
 	// },
 });
+
+const partnersSlider = new Swiper('.partners__content-wrapper', {
+	speed: 700,
+	slidesPerView: 5.1,
+	spaceBetween: 20,
+	navigation: {
+        nextEl: ".schedule__arrow-next",
+        prevEl: ".schedule__arrow-prev",
+    },
+    pagination: {
+        el: ".partners__item-pagination",
+		clickable: true,
+    },
+	// breakpoints: {
+	// 	0: {
+	// 		slidesPerView: 1,
+	// 		spaceBetween: 10,
+	// 	},
+	// 	680: {
+	// 		slidesPerView: 3,
+	// 		spaceBetween: 60,
+	// 		autoplay: false
+	// 	}
+	// },
+});

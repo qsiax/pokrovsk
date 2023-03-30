@@ -35,7 +35,7 @@
     &__item {
         width: 573px;
         height: 300px;
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding: 40px;
         display: flex;
@@ -98,7 +98,7 @@
     &__block-item {
         width: 870px;
         height: 360px;
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding-top: 40px;
         padding-left: 40px;
@@ -129,7 +129,7 @@
         align-items: center;
         justify-content: center;
         background: $primary-color;
-        border-radius: 25px;
+        border-radius: 20px;
         cursor: pointer;
     }
 

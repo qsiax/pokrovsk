@@ -21,9 +21,9 @@
         letter-spacing: -0.03em;
         text-transform: uppercase;
         padding: 19.5px 40.5px;
-        color: $primary-color;
+        color: $text;
         border: 1px solid $text-secondary;
-        border-radius: 50px;
+        border-radius: 20px;
         margin-right: 20px;
         cursor: pointer;
         transition: .3s ease;
@@ -31,9 +31,9 @@
             margin-right: 0;
         }
         &.active {
-            background: $text;
+            background: $primary-color;
             color: $main-color;
-            border: 1px solid $text;
+            border: 1px solid $primary-color;
         }
     }
 
@@ -116,7 +116,7 @@
         position: relative;
         width: 336px;
         height: 300px;
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding: 40px;
         cursor: pointer;
@@ -126,7 +126,7 @@
         position: relative;
         width: 1048px;
         height: 300px;
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding: 40px;
         cursor: pointer;
@@ -187,7 +187,7 @@
         position: relative;
         width: 336px;
         height: 193px;
-        border-radius: 25px;
+        border-radius: 20px;
         padding: 40px;
         border: 1px solid $text-secondary;
         cursor: pointer;
@@ -220,7 +220,7 @@
         position: relative;
         width: 336px;
         height: 193px;
-        border-radius: 50px;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;

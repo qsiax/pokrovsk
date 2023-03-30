@@ -43,7 +43,7 @@
             line-height: 150%;
             letter-spacing: -0.03em;
             text-transform: uppercase;
-            margin-right: 20px;
+            margin-right: 10px;
             &:last-child {
                 margin-right: 0;
             }
@@ -62,12 +62,23 @@
             }
             &:nth-child(2) {
                 .header__navigation-block {
-                    left: 360px;
+                    left: 223px;
+                    height: 330px;
+                    bottom: -350px;
                 }
             }
             &:nth-child(3) {
                 .header__navigation-block {
-                    left: 585px;
+                    left: 498px;
+                    height: 330px;
+                    bottom: -350px;
+                }
+            }
+            &:nth-child(4) {
+                .header__navigation-block {
+                    left: 728px;
+                    height: 132px;
+                    bottom: -152px;
                 }
             }
         }
@@ -78,12 +89,14 @@
         display: flex;
         align-items: center;
         transition: .3s ease;
-        padding: 19.5px 30px;
+        padding: 18.5px 30px;
         border-radius: 20px;
         position: relative;
+        border: 1px solid $text-secondary;
         &:hover {
             color: $main-color;
             background: $primary-color;
+            border: 1px solid $primary-color;
             .header__navigation-arrow {
                 color: $main-color;
             }
@@ -93,6 +106,7 @@
     &__navigation-arrow {
         font-size: 32px;
         transition: .3s ease;
+        color: $text;
     }
 
     &__block {
@@ -102,13 +116,18 @@
     &__search {
         width: 75px;
         height: 75px;
-        border-radius: 50%;
+        border-radius: 20px;
         margin-right: 10px;
         background: $text;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            background: $primary-color;
+            color: $main-color;
+        }
     }
 
     &__search-icon {
@@ -119,12 +138,17 @@
     &__btn {
         width: 75px;
         height: 75px;
-        border-radius: 50%;
+        border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         background: $text;
         cursor: pointer;
+        transition: .3s ease;
+        &:hover {
+            background: $primary-color;
+            color: $main-color;
+        }
     }
 
     &__btn-icon {
@@ -135,9 +159,9 @@
     &__navigation-block {
         position: absolute;
         left: 0;
-        bottom: -375px;
+        bottom: -590px;
         width: 615px;
-        height: 355px;
+        height: 570px;
         border-radius: 25px;
         border: 1px solid $text-secondary;
         transform: translateX(100px);
@@ -145,6 +169,8 @@
         visibility: hidden;
         transition: .5s ease;
         background: $main-color;
+        z-index: 1;
+        overflow: hidden;
     }
 
     &__navigation-block-wrapper {
@@ -218,50 +244,6 @@
         }
     }
 
-    .block-item-hover-01 {
-
-    }
-
-    .block-item-hover-02 {
-        &:hover {
-            .header__navigation-block-item-add  {
-                transform: translateX(0px);
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-        .header__navigation-block-item-add {
-            top: 192px;
-        }
-    }
-
-    .block-item-hover-03 {
-        &:hover {
-            .header__navigation-block-item-add  {
-                transform: translateX(0px);
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-        .header__navigation-block-item-add {
-            top: 384px;
-        }
-    }
-
-    .block-item-hover-04 {
-        &:hover {
-            .header__navigation-block-item-add  {
-                transform: translateX(0px);
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-        .header__navigation-block-item-add {
-            top: 468px;
-        }
-    }
-
-
     &__navigation-item-icon {
         font-size: 48px;
         margin-right: 20px;
@@ -294,56 +276,5 @@
         bottom: -40px;
         width: 100%;
         height: 40px;
-        background: $primary-color;
-    }
-
-    &__navigation-block-item-add-wrapper {
-        position: absolute;
-        right: -630px;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__navigation-block-item-add {
-        position: absolute;
-        right: -630px;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid $text-secondary;
-        border-radius: 25px;
-        background: $main-color;    
-        width: 615px;
-        transition: .5s ease;
-        transform: translateX(100px);
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    &__navigation-block-item-add-underblock {
-        height: 100%;
-        width: 25px;
-        left: -25px;
-        position: absolute;
-    }
-
-    &__navigation-block-item-add-title {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 150%;
-        letter-spacing: -0.03em;
-        min-width: 493px;
-        color: $text ;
-        text-transform: none;
-        padding: 15px 40px;
-
-        transition: .5s ease;
-        border-radius: 25px;
-        &:hover {
-            background: $primary-color;
-            color: $main-color;
-        }
     }
 }
-

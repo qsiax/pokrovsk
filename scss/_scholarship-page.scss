@@ -1,9 +1,11 @@
 .scholarship {
 
     &__container {
+        overflow: visible;
     }
 
     &__body {
+        margin-bottom: 200px;
     }
 
     &__title {
@@ -24,6 +26,7 @@
         line-height: 100%;
         letter-spacing: -0.03em;
         margin-bottom: 40px;
+        max-width: 870px;
     }
 
     &__item-wrapper {
@@ -35,7 +38,7 @@
     &__item {
         width: 574px;
         height: 165px;
-        border-radius: 25px;
+        border-radius: 20px;
         padding: 40px;
         padding-bottom: 38px;
         border: 1px solid $text-secondary;
@@ -57,7 +60,7 @@
     &__item-02 {
         width: 574px;
         height: 140px;
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding: 40px;
         &:first-child {
@@ -66,17 +69,67 @@
     }
 
     &__document-wrapper {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__document-block {
+        &:first-child {
+            .scholarship__document-item {
+                &:last-child {
+                    height: 182px;
+                }
+            }
+        }
+        &:last-child {
+            .scholarship__document-item {
+                &:first-child {
+                    height: 211px;
+                }
+                &:nth-child(2) {
+                    height: 153px;
+                }
+            }
+        }
     }
 
     &__document-item {
+        height: 144px;
+        padding-left: 40px;
+        padding-right: 33px;
+        border: 1px solid $text-secondary;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 870px;
+        margin-bottom: 20px;
+        transition: .5s ease;
+        cursor: pointer;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover {
+            background: $primary-color;
+            .scholarship__document-item-text {
+                color: $main-color;
+            }
+            .scholarship__document-item-icon {
+                color: $main-color;
+            }
+        }
     }
 
     &__document-item-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 533px;
     }
 
     &__document-item-icon {
+        font-size: 48px;
+        color: $primary-color;
     }
 }

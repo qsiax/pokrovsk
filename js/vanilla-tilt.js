@@ -1,4 +1,4 @@
-var VanillaTilt = (function () {
+ var VanillaTilt = (function () {
     'use strict';
     
     /**

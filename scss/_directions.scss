@@ -19,7 +19,7 @@
     }
 
     &__title {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 50px;
         line-height: 100%;
         letter-spacing: -0.03em;
@@ -34,16 +34,25 @@
         max-width: 870px;
     }
 
+    &__img {
+        width: 870px;
+        height: 385px;
+        background: url('/source/directions-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 360px;
+    }
+
     &__item-wrapper {
     }
 
     &__item {
         width: 870px;
         height: 115px;
-        border-radius: 50px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         color: $text;
-        font-weight: 400;
+        font-weight: 500;
         font-size: 50px;
         line-height: 150%;
         letter-spacing: -0.03em;
@@ -74,12 +83,13 @@
     }
 
     &__item-block {
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         width: 870px;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
         height: 0px;
         visibility: hidden;
         opacity: 0;
@@ -87,22 +97,58 @@
         &.active {
             visibility: visible;
             opacity: 1;   
-            height: 270px;
+            height: 432px;
             margin-bottom: 20px;
-            p {
+            .directions__item-title {
+                visibility: visible;
+                opacity: 1;
+            }
+            .directions__item-btn {
                 visibility: visible;
                 opacity: 1;
             }
         }
-        p {
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 150%;
-            letter-spacing: -0.03em;
-            max-width: 790px;
-            visibility: hidden;
-            opacity: 0;
-            transition: .5s ease;
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        max-width: 790px;
+        margin-bottom: 40px;
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s ease;
+        span {
+            color: $primary-color;
+            text-transform: uppercase;
         }
+    }
+
+    &__item-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        width: 790px;
+        height: 76px;
+        background: $text;
+        color: $main-color;
+        border-radius: 20px;
+        visibility: hidden;
+        opacity: 0;
+        cursor: pointer;
+        transition: .5s ease;
+    }
+
+    &__item-btn-arrow {
+        font-size: 24px;
+        margin-left: 10px;
+        transform: rotate(-90deg);
     }
 }

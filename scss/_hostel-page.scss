@@ -65,7 +65,7 @@
         background: url(/source/hostel.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 25px;
+        border-radius: 20px;
     }
 }
 
@@ -106,7 +106,7 @@
     &__item {
         width: 870px;
         height: 460px;
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding: 40px 40px 0px 40px;
     }
@@ -184,7 +184,7 @@
     &__item {
         width: 870px;
         height: 620px;
-        border-radius: 25px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding: 40px 40px 0px 40px;
     }

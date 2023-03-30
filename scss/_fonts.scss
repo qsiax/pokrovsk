@@ -1,137 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 @font-face {
-    font-family: 'icomoon';
-    src:  url('/source/fonts/icomoon.eot?94rfmp');
-    src:  url('/source/fonts/icomoon.eot?94rfmp#iefix') format('embedded-opentype'),
-      url('/source/fonts/icomoon.ttf?94rfmp') format('truetype'),
-      url('/source/fonts/icomoon.woff?94rfmp') format('woff'),
-      url('/source/fonts/icomoon.svg?94rfmp#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="_icon-"], [class*=" _icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  ._icon-arrow:before {
-    content: "\e900";
-  }
-  ._icon-book:before {
-    content: "\e901";
-  }
-  ._icon-college:before {
-    content: "\e902";
-  }
-  ._icon-discord:before {
-    content: "\e903";
-  }
-  ._icon-document:before {
-    content: "\e904";
-  }
-  ._icon-download:before {
-    content: "\e905";
-  }
-  ._icon-eye:before {
-    content: "\e906";
-  }
-  ._icon-house:before {
-    content: "\e907";
-  }
-  ._icon-list:before {
-    content: "\e908";
-  }
-  ._icon-nav-arrow:before {
-    content: "\e909";
-  }
-  ._icon-priemnaya:before {
-    content: "\e90a";
-  }
-  ._icon-prof:before {
-    content: "\e90b";
-  }
-  ._icon-schedule:before {
-    content: "\e90c";
-  }
-  ._icon-search:before {
-    content: "\e90d";
-  }
-  ._icon-teach:before {
-    content: "\e90e";
-  }
-  ._icon-vk:before {
-    content: "\e90f";
-  }
-  ._icon-yt:before {
-    content: "\e910";
-  }
-  
-  @font-face {
-    font-family: 'icomoon';
-    src:  url('/source/fonts/icomoon-social.eot?kiitn1');
-    src:  url('/source/fonts/icomoon-social.eot?kiitn1#iefix') format('embedded-opentype'),
-      url('/source/fonts/icomoon-social.ttf?kiitn1') format('truetype'),
-      url('/source/fonts/icomoon-social.woff?kiitn1') format('woff'),
-      url('/source/fonts/icomoon-social.svg?kiitn1#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  [class^="_icon-"], [class*=" _icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  ._icon-rt:before {
-    content: "\e905";
-  }
-  ._icon-ds:before {
-    content: "\e900";
-  }
-  ._icon-btn-arrow:before {
-    content: "\e901";
-  }
-  ._icon-odnaclassniki .path1:before {
-    content: "\e902";
-  }
-  ._icon-odnaclassniki .path2:before {
-    content: "\e903";
-    margin-left: -1em;
-    color: rgb(0, 0, 0);
-  }
-  ._icon-odnaclassniki .path3:before {
-    content: "\e904";
-    margin-left: -1em;
-    color: rgb(0, 0, 0);
-  }
-  ._icon-telegram:before {
-    content: "\e90d";
-  }
-  ._icon-vk:before {
-    content: "\e90e";
-  }
-  
+  font-family: 'icomoon';
+  src:  url('/source/fonts/icomoon.eot?cira17');
+  src:  url('/source/fonts/icomoon.eot?cira17#iefix') format('embedded-opentype'),
+    url('/source/fonts/icomoon.ttf?cira17') format('truetype'),
+    url('/source/fonts/icomoon.woff?cira17') format('woff'),
+    url('/source/fonts/icomoon.svg?cira17#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-arrow:before {
+  content: "\e900";
+}
+._icon-btn-arrow:before {
+  content: "\e901";
+}
+._icon-download:before {
+  content: "\e902";
+}
+._icon-ds:before {
+  content: "\e903";
+}
+._icon-eye:before {
+  content: "\e904";
+}
+._icon-ok:before {
+  content: "\e905";
+}
+._icon-rutube:before {
+  content: "\e906";
+}
+._icon-search:before {
+  content: "\e907";
+}
+._icon-telegram:before {
+  content: "\e908";
+}
+._icon-vk:before {
+  content: "\e909";
+}

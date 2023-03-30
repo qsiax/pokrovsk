@@ -1,15 +1,17 @@
 .about {
     position: relative;
+    width: 1840px;
+    background: url(/source/about-bg.jpg) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-bottom: 200px;
     &__container {
-        margin-bottom: 200px;
     }
 
     &__body {
         height: 770px;
-        background: url(/source/about-bg.jpg) center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-left: 80px;
         padding-top: 40px;
         * {
             color: $main-color;
@@ -47,10 +49,10 @@
         letter-spacing: -0.03em;
         color: $main-color;
         position: absolute;
-        bottom: -70px;
+        bottom: -50px;
         left: -965px;
         min-width: 10636px;
-        animation: decoreAnimation 30s linear infinite;
+        animation: decoreAnimation 15s linear infinite;
     }
 }
 

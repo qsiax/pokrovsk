@@ -11,11 +11,55 @@
     &__head {
         margin-bottom: 40px;
         display: flex;
+        display: flex;
+        justify-content: space-between;
+
+        select {
+            width: 320px;
+            height: 75px;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: $main-color;
+            background: $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 30px;
+            cursor: pointer;
+            position: relative;
+        }
+    }
+
+    &__head-wrapper {
+        display: flex;
+    }
+
+    &__head-arrow-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__head-arrow-prev {
+        font-size: 48px;
+        transform: rotate(90deg);
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    &__head-arrow-next{
+        font-size: 48px;
+        transform: rotate(-90deg);
+        cursor: pointer;
+        margin-right: 40px;
     }
 
     &__head-item {
         padding: 19.5px 40px;
-        border-radius: 50px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         margin-right: 20px;
         cursor: pointer;
@@ -24,8 +68,8 @@
             margin-right: 0;
         }
         &.active {
-            border: 1px solid $text;
-            background: $text;
+            border: 1px solid $primary-color;
+            background: $primary-color;
             .document__head-item-title {
                 color: $main-color;
             }
@@ -33,12 +77,12 @@
     }
 
     &__head-item-title {
-        font-weight: 400;
+        font-weight: 500;
         font-size: 24px;
         line-height: 150%;
         letter-spacing: -0.03em;
         text-transform: uppercase;
-        color: $primary-color;
+        color: $text;
         transition: .3s ease;
     }
 
@@ -66,7 +110,7 @@
     &__item {
         width: 870px;
         height: 114px;
-        border-radius: 50px;
+        border-radius: 20px;
         border: 1px solid $text-secondary;
         padding: 39px 38px;
         margin-bottom: 21px;
@@ -74,8 +118,20 @@
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+        transition: .5s ease;
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &:hover {
+            background: $primary-color;
+            color: $main-color;
+            .document__item-nav {
+                color: $main-color;   
+            }
+            .document__item-icon {
+                color: $main-color;
+            }
         }
     }
 
@@ -100,6 +156,7 @@
     &__item-icon {
         font-size: 48px;
         color: $primary-color;
+        transition: .5s ease;
     }
 
     &__arrow-wrapper {

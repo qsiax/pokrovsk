@@ -80,19 +80,48 @@ body {
 	transform: translateX(-100%);
 }
 
+// .overlay-svg-logo {
+// 	svg path {
+// 		fill: transparent;
+// 		stroke-width: 2;
+// 		stroke: $main-color;
+
+// 		stroke-dasharray: 1560;
+// 		stroke-dashoffset: 1560;
+
+// 		animation: animateLogo 7 s linear forwards;
+// 	}
+// }
+
+// @keyframes animateLogo {
+// 	0% {
+// 		stroke-dashoffset: 1560;
+// 	}
+// 	90% {
+// 		stroke-dashoffset: 3120;
+// 		fill: transparent;
+// 	}
+// 	100% {
+// 		stroke-dashoffset: 3120;
+// 		fill: $main-color;
+// 	}
+// }
+
 
 .mb1250 {
 	margin-bottom: 1250px;
 }
 
+
 // Import
 @import '_header';
+@import '_carousel';
 @import '_home';
 @import '_about';
+@import '_news';
 @import '_directions';
 @import '_contact';
 @import '_partners';
-@import '_social';
 @import '_footer';
 
 // Page Import
@@ -101,7 +130,7 @@ body {
 @import '_study-page';
 @import '_hostel-page';
 @import '_schedule-page';
-@import '_feedback-page';
+@import '_course-page';
 @import '_founders-page';
 @import '_management-page';
 @import '_educational-page';
