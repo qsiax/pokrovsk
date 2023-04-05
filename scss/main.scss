@@ -80,34 +80,6 @@ body {
 	transform: translateX(-100%);
 }
 
-// .overlay-svg-logo {
-// 	svg path {
-// 		fill: transparent;
-// 		stroke-width: 2;
-// 		stroke: $main-color;
-
-// 		stroke-dasharray: 1560;
-// 		stroke-dashoffset: 1560;
-
-// 		animation: animateLogo 7 s linear forwards;
-// 	}
-// }
-
-// @keyframes animateLogo {
-// 	0% {
-// 		stroke-dashoffset: 1560;
-// 	}
-// 	90% {
-// 		stroke-dashoffset: 3120;
-// 		fill: transparent;
-// 	}
-// 	100% {
-// 		stroke-dashoffset: 3120;
-// 		fill: $main-color;
-// 	}
-// }
-
-
 .mb1250 {
 	margin-bottom: 1250px;
 }
@@ -136,7 +108,10 @@ body {
 @import '_educational-page';
 @import '_library-page';
 @import '_scholarship-page';
-
+@import '_logistics-page';
+@import '_economic-page';
+@import '_reception-page';
+@import '_accessible-page';
 
 
 

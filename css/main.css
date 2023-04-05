@@ -3577,3 +3577,448 @@ body li {
   font-size: 48px;
   color: #537EE7;
 }
+
+.logistics__heading {
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  max-width: 1400px;
+  text-transform: uppercase;
+  margin-bottom: 200px;
+}
+.logistics__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+}
+.logistics__title span {
+  color: #537EE7;
+  min-width: 40px;
+  margin-right: 10px;
+}
+.logistics__title.block-heading {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+.logistics__block-cabinet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 25px;
+  border: 1px solid #B1B1B1;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.logistics__wrapper:first-child {
+  max-width: 810px;
+}
+.logistics__wrapper:last-child {
+  max-width: 830px;
+}
+.logistics__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
+}
+.logistics__image {
+  width: 830px;
+  height: 652px;
+  border-radius: 25px;
+  margin-top: 138px;
+  margin-bottom: 20px;
+  background: url(/source/logistics.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logistics__block-technique {
+  border-radius: 25px;
+  border: 1px solid #B1B1B1;
+  padding: 40px;
+  margin-bottom: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logistics__block-technique span {
+  color: #537EE7;
+}
+.logistics__block-technique .logistics__wrapper:last-child .logistics__text {
+  margin-top: 69px;
+}
+.logistics__block-details {
+  margin-bottom: 200px;
+}
+.logistics__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logistics__item {
+  border-radius: 25px;
+  border: 1px solid #B1B1B1;
+  padding: 40px;
+  cursor: pointer;
+  min-width: 336px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.logistics__item:hover {
+  background: #537EE7;
+  border: 1px solid #537EE7;
+}
+.logistics__item:hover * {
+  color: white;
+}
+.logistics__item-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+.logistics__item-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  margin-bottom: 10px;
+  max-width: 255px;
+}
+.logistics__item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  max-width: 255px;
+  color: #B1B1B1;
+}
+.logistics__descriptions {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  max-width: 877px;
+  color: #B1B1B1;
+  margin-left: 883px;
+  margin-bottom: 29px;
+}
+.logistics__block-documents {
+  margin-bottom: 200px;
+}
+.logistics__documents-item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logistics__documents-item {
+  width: 870px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  border: 1px solid #B1B1B1;
+  padding: 42.5px 40px;
+  margin-bottom: 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.logistics__documents-item:last-child {
+  margin-bottom: 0;
+}
+.logistics__documents-item:hover {
+  background: #537EE7;
+  border: 1px solid #537EE7;
+}
+.logistics__documents-item:hover * {
+  color: white;
+}
+.logistics__documents-item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+}
+.logistics__documents-item-icon {
+  font-size: 48px;
+  color: #537EE7;
+}
+
+.economic__heading {
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 200px;
+}
+.economic__block-info {
+  margin-bottom: 200px;
+}
+.economic__block-info .economic__item-body .economic__item-wrapper .economic__item:first-child .economic__item-title {
+  color: #B1B1B1;
+}
+.economic__block-info .economic__item-body .economic__item-wrapper:first-child .economic__item {
+  width: 150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+.economic__block-volume {
+  margin-bottom: 200px;
+}
+.economic__block-volume .economic__item-body .economic__item-wrapper .economic__item {
+  width: 425px;
+}
+.economic__block-volume .economic__item-body .economic__item-wrapper .economic__item:first-child .economic__item-title {
+  color: #B1B1B1;
+}
+.economic__block-volume .economic__item-body .economic__item-wrapper:last-child .economic__item:first-child {
+  padding: 25.5px 20px;
+}
+.economic__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  max-width: 870px;
+  margin-bottom: 40px;
+}
+.economic__item-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.economic__item {
+  border-radius: 20px;
+  border: 1px solid #B1B1B1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 40px 0px;
+  padding-left: 20px;
+  width: 776px;
+  margin-bottom: 20px;
+}
+.economic__item:last-child {
+  margin-bottom: 0;
+}
+.economic__item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+}
+.economic__item-body-document {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 200px;
+}
+.economic__item-document {
+  width: 870px;
+  border-radius: 25px;
+  border: 1px solid #B1B1B1;
+  padding: 33px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.economic__item-document:last-child {
+  margin-bottom: 0;
+}
+.economic__item-document:hover {
+  background: #537EE7;
+  border: 1px solid #537EE7;
+}
+.economic__item-document:hover * {
+  color: white;
+}
+.economic__item-title-document {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+}
+.economic__item-icon-document {
+  font-size: 48px;
+  color: #537EE7;
+}
+
+.reception__body {
+  margin-bottom: 200px;
+}
+.reception__heading {
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  max-width: 1207px;
+  margin-bottom: 100px;
+}
+.reception__heading span {
+  color: #B1B1B1;
+}
+.reception__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+.reception__item-body {
+  margin-bottom: 40px;
+}
+.reception__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.reception__item-wrapper:last-child {
+  margin-bottom: 0;
+}
+.reception__item-wrapper:nth-child(1) .reception__item {
+  height: 110px;
+  padding-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.reception__item-wrapper:nth-child(1) .reception__item .reception__item-title {
+  color: #B1B1B1;
+}
+.reception__item-wrapper:nth-child(2) .reception__item {
+  height: 165px;
+}
+.reception__item {
+  border-radius: 20px;
+  border: 1px solid #B1B1B1;
+  width: 204px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 40px;
+  height: 255px;
+}
+.reception__item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+}
+.reception__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  max-width: 870px;
+  margin-left: auto;
+}
+.reception__description span {
+  color: #537EE7;
+}
+
+.accessible__body {
+  margin-bottom: 200px;
+}
+.accessible__heading {
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 90%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 200px;
+}
+.accessible__block {
+  margin-bottom: 200px;
+}
+.accessible__block:last-child {
+  margin-bottom: 0px;
+}
+.accessible__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  margin-bottom: 40px;
+}
+.accessible__item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.accessible__item {
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #B1B1B1;
+  width: 574px;
+}
+.accessible__item-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+}

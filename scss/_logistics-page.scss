@@ -1,0 +1,207 @@
+.logistics {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 75px;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+        max-width: 1400px;
+        text-transform: uppercase;
+        margin-bottom: 200px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 700px;
+        display: flex;
+        margin-bottom: 40px;
+        span {
+            color: $primary-color;
+            min-width: 40px;
+            margin-right: 10px;
+        }
+
+        &.block-heading {
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 100%;
+            letter-spacing: -0.03em;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__block-cabinet {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__wrapper {
+        &:first-child {
+            max-width: 810px;
+        }
+        &:last-child {
+            max-width: 830px;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        letter-spacing: -0.03em;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    &__image {
+        width: 830px;
+        height: 652px;
+        border-radius: 25px;
+        margin-top: 138px;
+        margin-bottom: 20px;
+        background: url(/source/logistics.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__block-technique {
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px;
+        margin-bottom: 200px;
+        display: flex;
+        justify-content: space-between;
+        span {
+            color: $primary-color;
+        }
+        .logistics__wrapper {
+            &:last-child {
+                .logistics__text {
+                    margin-top: 69px;
+                }
+            }
+        }
+    }
+
+    &__block-details {
+        margin-bottom: 200px;
+    }
+
+    &__item-wrapper {
+        display: flex;  
+        justify-content: space-between;
+    }
+
+    &__item {
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 40px;
+        cursor: pointer;
+        min-width: 336px;
+        transition: .3s ease;
+        
+        &:hover {
+            background: $primary-color;
+            border: 1px solid $primary-color;
+            * {
+                color: $main-color;
+            }
+        }
+    }
+
+    &__item-icon {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 20px;
+    }
+
+    &__item-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        margin-bottom: 10px;
+        max-width: 255px;
+    }
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 255px;
+        color: $text-secondary;
+    }
+
+    &__descriptions {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 877px;
+        color: $text-secondary;
+        margin-left: 883px;
+        margin-bottom: 29px;
+    }
+
+    &__block-documents {
+        margin-bottom: 200px;
+    }
+
+    &__documents-item-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__documents-item-block {
+    }
+
+    &__documents-item {
+        width: 870px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 25px;
+        border: 1px solid $text-secondary;
+        padding: 42.5px 40px;
+        margin-bottom: 20px;
+        transition: .3s ease;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            background: $primary-color;
+            border: 1px solid $primary-color;
+
+            * {
+                color: $main-color;
+            }
+        }
+    }
+
+    &__documents-item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+    }
+
+    &__documents-item-icon {
+        font-size: 48px;
+        color: $primary-color;
+    }
+}
