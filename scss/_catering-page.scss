@@ -1,0 +1,76 @@
+.catering {
+
+    &__container {
+    }
+
+    &__body {
+        margin-bottom: 200px;
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 75px;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+        max-width: 920px;
+    }
+
+    &__content {
+    }
+
+    &__img {
+        width: 100%;
+        height: 335px;
+        background: url(/source/catering.png);
+        border: 1px solid $text-secondary;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__item-body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-wrapper {
+    }
+
+    &__item {
+        width: 870px;
+        border-radius: 20px;
+        border: 1px solid $text-secondary;
+        padding: 28px 40px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: .3s ease;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        &:hover {
+            background: $primary-color;
+            border: 1px solid $primary-color;
+            * {
+                color: $main-color;
+            }
+        }
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        max-width: 687px;
+    }
+
+    &__item-icon {
+        font-size: 48px;
+        color: $primary-color;
+    }
+}

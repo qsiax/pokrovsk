@@ -1,0 +1,37 @@
+.rating {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 75px;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-bottom: 240px;
+        max-width: 890px;
+    }
+
+    &__button {
+        display: flex;
+        background: $primary-color;
+        border-radius: 20px;
+        padding: 30px 109px;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        color: $main-color;
+        margin-bottom: 340px;
+    }
+
+    &__button-icon {
+        margin-left: 20px;
+        transform: rotate(-90deg);
+    }
+}

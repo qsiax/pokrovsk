@@ -1,0 +1,74 @@
+.welfare {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__heading {
+        font-weight: 500;
+        font-size: 75px;
+        line-height: 90%;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+
+    &__content {
+    }
+
+    &__block {
+        margin-bottom: 200px;
+        &:first-child {
+            .welfare__item-wrapper {
+                .welfare__item {
+                    height: 165px;
+                }
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        margin-bottom: 40px;
+        max-width: 870px;
+    }
+
+    &__item-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        border-radius: 20px;
+        border: 1px solid $text-secondary;
+        padding-left: 40px;
+        padding-top: 40px;
+        width: 574px;
+        height: 109px;
+        &:last-child {
+            .welfare__item-title {
+                span {
+                    color: $primary-color;
+                    &:nth-child(2) {
+                        color: $text-secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: -0.03em;
+        span {
+            color: $primary-color;
+        }
+    }
+}

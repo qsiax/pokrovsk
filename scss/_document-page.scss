@@ -23,8 +23,9 @@
             line-height: 150%;
             letter-spacing: -0.03em;
             text-transform: uppercase;
+            text-transform: uppercase;
             color: $main-color;
-            background: $primary-color;
+            background: $text;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -124,6 +125,7 @@
         }
 
         &:hover {
+            border: 1px solid $primary-color;
             background: $primary-color;
             color: $main-color;
             .document__item-nav {
@@ -178,4 +180,7 @@
         margin-right: 40px;
         cursor: pointer;
     }
+}
+.mlauto {
+    margin-left: auto;
 }

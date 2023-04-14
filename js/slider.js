@@ -72,3 +72,9 @@ const partnersSlider = new Swiper('.partners__content-wrapper', {
 	// 	}
 	// },
 });
+
+const basicSlider = new Swiper('.basic__item-wrapper-gallery', {
+	speed: 700,
+    slidesPerView: 2.5,
+	spaceBetween: 20,
+});
