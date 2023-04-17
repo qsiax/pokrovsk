@@ -11,7 +11,12 @@
 
     &__head {
         display: flex;
+        justify-content: space-between;
         margin-bottom: 80px;
+    }
+
+    &__head-block {
+        display: flex;
     }
 
     &__head-item {
@@ -120,6 +125,14 @@
         border: 1px solid $text-secondary;
         padding: 40px;
         cursor: pointer;
+        transition: .2s ease-in;
+        &:hover {
+            background: $primary-color;
+            border-color: $primary-color;
+            * {
+                color: $main-color;
+            }
+        }
     }
 
     &__item-long {
@@ -130,16 +143,29 @@
         border: 1px solid $text-secondary;
         padding: 40px;
         cursor: pointer;
+        transition: .2s ease-in;
+        &:hover {
+            background: $primary-color;
+            border-color: $primary-color;
+            * {
+                color: $main-color;
+            }
+        }
     }
 
-    &__item-text {
+    &__item-next {
+        position: relative;
         width: 336px;
-        height: 264px;
-        margin-right: 20px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 120%;
-        color: $text-secondary;
+        height: 300px;
+        border-radius: 20px;
+        border: 1px solid $primary-color;
+        padding: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $primary-color;
+        color: $main-color;
     }
 
     &__item-title {
@@ -191,6 +217,14 @@
         padding: 40px;
         border: 1px solid $text-secondary;
         cursor: pointer;
+        transition: .2s ease-in;
+        &:hover {
+            background: $primary-color;
+            border-color: $primary-color;
+            * {
+                color: $main-color;
+            }
+        }
     }
 
     &__item-praktika-text {
@@ -226,7 +260,6 @@
         justify-content: center;
         border: 1px solid $text-secondary;
         cursor: pointer;
-        transition: .3s ease;
         &.active {
             border: 1px solid $text;
             background: $text;
@@ -235,6 +268,15 @@
                 .study__item-title-group-icon {
                     transform: rotate(0deg);
                 }
+            }
+        }
+
+        transition: .2s ease-in;
+        &:hover {
+            background: $primary-color;
+            border-color: $primary-color;
+            * {
+                color: $main-color;
             }
         }
     }
@@ -266,5 +308,116 @@
         &.active {
             transform: translateX(0%);  
         }
+    }
+
+    &__item-group-bottom {
+        position: absolute;
+        bottom: -250px;
+        right: 0;
+        width: 100%;
+    }
+
+    &__item-group-arrow-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-group-arrow-prev {
+        font-size: 48px;
+        color: $text;
+        transform: rotate(90deg);
+        margin-right: 40px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    &__item-group-arrow-next {
+        font-size: 48px;
+        color: $text;
+        transform: rotate(-90deg);
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    
+    &__item-group-pagination-wrapper {
+        top: 0;
+        left: 50%;
+        width: 250px;
+        height: 24px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-50%);
+    }
+
+    &__item-group-pagination {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__session-bottom {
+        position: absolute;
+        bottom: -40px;
+        right: 0;
+        width: 100%;
+    }
+
+    &__session-pagination-wrapper {
+        top: 0px;
+        left: 50%;
+        width: 75px;
+        height: 24px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-50%);
+    }
+
+    &__session-pagination {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__session-arrow-wrapper {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__session-arrow-prev {
+        font-size: 48px;
+        color: $text;
+        transform: rotate(90deg);
+        margin-right: 40px;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    &__session-arrow-next {
+        font-size: 48px;
+        color: $text;
+        transform: rotate(-90deg);
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+    .swiper-pagination-bullet {
+        width: 24px;
+        height: 24px;
+        transition: .3s ease; 
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 0px;
+        left: auto;
     }
 }

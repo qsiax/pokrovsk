@@ -6,33 +6,13 @@
 
     &__body {
         margin-bottom: 998px;
+        position: relative;
     }
     
     &__head {
         margin-bottom: 40px;
         display: flex;
-        display: flex;
         justify-content: space-between;
-
-        select {
-            width: 320px;
-            height: 75px;
-            border-radius: 20px;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 150%;
-            letter-spacing: -0.03em;
-            text-transform: uppercase;
-            text-transform: uppercase;
-            color: $main-color;
-            background: $text;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0px 30px;
-            cursor: pointer;
-            position: relative;
-        }
     }
 
     &__head-wrapper {
@@ -163,8 +143,9 @@
 
     &__arrow-wrapper {
         display: flex;
-        justify-content: flex-end;
-        display: none;
+        position: absolute;
+        bottom: -778px;
+        right: 0;
     }
 
     &__arrow-prev {
@@ -180,7 +161,4 @@
         margin-right: 40px;
         cursor: pointer;
     }
-}
-.mlauto {
-    margin-left: auto;
 }

@@ -78,3 +78,31 @@ const basicSlider = new Swiper('.basic__item-wrapper-gallery', {
     slidesPerView: 2.5,
 	spaceBetween: 20,
 });
+
+const sessionSlider = new Swiper('.study__item-content-wrapper', {
+	speed: 700,
+    slidesPerView: 1,
+	spaceBetween: 0,
+	navigation: {
+        nextEl: ".study__session-arrow-next",
+        prevEl: ".study__session-arrow-prev",
+    },
+    pagination: {
+        el: ".study__session-pagination",
+		clickable: true,
+    },
+});
+
+const groupSlider = new Swiper('.study__item-block-wrapper-group', {
+	speed: 700,
+    slidesPerView: 5,
+	spaceBetween: 20,
+	navigation: {
+        nextEl: ".study__item-group-arrow-next",
+        prevEl: ".study__item-group-arrow-prev",
+    },
+    pagination: {
+        el: ".study__item-group-pagination",
+		clickable: true,
+    },
+});

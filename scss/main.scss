@@ -11,6 +11,11 @@
 	scroll-padding-top: 100px;
 }
 
+html {
+	&.none-scroll {
+		overflow: hidden;
+	}
+}
 html,
 body {
 	font-size: 16px; 
@@ -124,3 +129,4 @@ body {
 @import '_catering-page';
 @import '_international-page';
 @import '_basic-page';
+@import '_prof-page';
