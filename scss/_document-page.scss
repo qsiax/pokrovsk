@@ -89,6 +89,7 @@
     }
 
     &__item {
+        position: relative;
         width: 870px;
         height: 114px;
         border-radius: 20px;
@@ -114,6 +115,24 @@
             .document__item-icon {
                 color: $main-color;
             }
+        }
+
+        &.active {
+            border: 1px solid $primary-color;
+            background: $primary-color;
+            color: $main-color;
+            .document__item-nav {
+                color: $main-color;   
+            }
+            .document__item-icon {
+                color: $main-color;
+            }
+        }
+
+        &.undate {
+            visibility: hidden;
+            opacity: 0;
+            display: none;
         }
     }
 

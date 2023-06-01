@@ -2,10 +2,16 @@
 
     &__body {
         margin-top: 107px;
+        @media (max-width: 600px) {
+            margin-top: 40px;
+        }
     }
 
     &__content {
         height: 150px;
+        @media (max-width: 600px) {
+            height: 100px;
+        }
     }
 
     &__content-wrapper {
@@ -28,6 +34,13 @@
         cursor: pointer;
         &:last-child {
             margin-right: 0;
+        }
+
+        @media (max-width: 600px) {
+            border-radius: 10px;
+            height: 100px;
+            min-width: 292px;
+            margin-right: 15px;
         }
 
         &:nth-child(1) {

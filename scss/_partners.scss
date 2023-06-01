@@ -6,6 +6,9 @@
 
     &__body {
         margin-bottom: 290px;
+        @media (max-width: 600px) {
+            margin-bottom: 80px;
+        }
     }
 
     &__title {
@@ -14,6 +17,12 @@
         line-height: 100%;
         letter-spacing: -0.03em;
         margin-bottom: 65px;
+        @media (max-width: 600px) {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__content-wrapper {
@@ -24,6 +33,7 @@
     }
 
     &__item {
+        position: relative;
         min-width: 336px;
         height: 270px;
         border-radius: 20px;
@@ -46,6 +56,11 @@
                 background: url('/source/partners-01.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media (max-width: 600px) {
+                    background: url('/source/partners-mobile-01.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
         }
         &:nth-child(2) {
@@ -53,6 +68,11 @@
                 background: url('/source/partners-02.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media (max-width: 600px) {
+                    background: url('/source/partners-mobile-02.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
         }
         &:nth-child(3) {
@@ -60,6 +80,11 @@
                 background: url('/source/partners-03.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media (max-width: 600px) {
+                    background: url('/source/partners-mobile-03.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
         }
         &:nth-child(4) {
@@ -67,6 +92,11 @@
                 background: url('/source/partners-04.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media (max-width: 600px) {
+                    background: url('/source/partners-mobile-04.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
         }
         &:nth-child(5) {
@@ -74,6 +104,11 @@
                 background: url('/source/partners-05.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media (max-width: 600px) {
+                    background: url('/source/partners-mobile-05.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
         }
         &:nth-child(6) {
@@ -81,6 +116,11 @@
                 background: url('/source/partners-06.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media (max-width: 600px) {
+                    background: url('/source/partners-mobile-06.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
         }
         &:nth-child(7) {
@@ -88,7 +128,20 @@
                 background: url('/source/partners-07.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media (max-width: 600px) {
+                    background: url('/source/partners-mobile-07.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             }
+        }
+
+        
+        @media (max-width: 600px) {
+            min-width: 155px;
+            height: 115px;
+            border-radius: 10px;
+            box-shadow: 0px 2.68235px 6.70588px rgba(83, 126, 231, 0.15);
         }
     }
 
@@ -97,6 +150,10 @@
         height: 210px;
         filter: saturate(0);
         transition: .5s ease;
+        @media (max-width: 600px) {
+            width: 115px;
+            height: 75px;
+        }
     }
 
     &__item-pagination-wrapper {
@@ -107,6 +164,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 600px) {
+            display: none;
+        }
     }
 
     &__item-pagination {

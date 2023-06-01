@@ -1,10 +1,16 @@
 .home {
     margin-bottom: 200px;
+    @media (max-width: 600px) {
+        margin-bottom: 80px;
+    }
     &__container {
     }
 
     &__body {
         margin-top: 40px;
+        @media (max-width: 600px) {
+            margin-top: 72px;
+        }
     }
 
     &__content {
@@ -22,6 +28,10 @@
         text-transform: uppercase;
         text-transform: uppercase;
         margin-bottom: 20px;
+        @media (max-width: 600px) {
+            font-size: 35px;
+            line-height: 90%;
+        }
     }
 
     &__block {
@@ -33,6 +43,11 @@
         font-size: 24px;
         line-height: 120%;
         max-width: 870px;
+        @media (max-width: 600px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+        }
     }
 
     &__btn-wrapper {
@@ -52,6 +67,19 @@
         &:hover {
             background: $primary-color;
         }
+        @media (max-width: 600px) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            bottom: 80px;
+            right: 20px;
+            border-radius: 10px;
+            .home__arrow {
+                font-size: 24px;
+            }
+        }
     }
 
     &__arrow {
@@ -67,6 +95,11 @@
         background-size: cover;
         border-radius: 20px;
         margin: 0 auto;
+        @media (max-width: 600px) {
+            height: 340px;
+            width: 100%;
+            border-radius: 10px;
+        }
     }
 }
 

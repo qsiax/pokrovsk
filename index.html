@@ -119,6 +119,9 @@
                         <div class="header__btn-icon _icon-eye"></div>
                     </div>
                 </div>
+                <div class="header__menu" onclick="menuTrigger()">
+                    <div class="header__menu-icon"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -707,6 +710,14 @@
             }
         }
         news();
+
+        const menu = document.querySelector('.header__menu')
+        const list = document.querySelector('.header__navigation')
+        
+        function menuTrigger() {
+            menu.classList.toggle('active')
+            list.classList.toggle('active')
+        }
     </script>
 </body>
 </html>

@@ -7,6 +7,11 @@
     margin: 0 auto;
     border-radius: 20px;
     margin-bottom: 200px;
+    @media (max-width: 600px) {
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 80px;
+    }
     &__container {
     }
 
@@ -16,6 +21,9 @@
         * {
             color: $main-color;
         }
+        @media (max-width: 600px) {
+            height: 450px;
+        }
     }
 
     &__sub {
@@ -24,6 +32,12 @@
         line-height: 100%;
         letter-spacing: -0.03em;
         margin-bottom: 40px;
+        @media (max-width: 600px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            margin-bottom: 10px;
+        }
     }
 
     &__title {
@@ -32,6 +46,12 @@
         line-height: 100%;
         letter-spacing: -0.03em;
         margin-bottom: 40px;
+        @media (max-width: 600px) {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            margin-bottom: 20px;
+        }
     }
 
     &__text {
@@ -40,6 +60,11 @@
         line-height: 150%;
         letter-spacing: -0.03em;
         max-width: 870px;
+        @media (max-width: 600px) {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+        }
     }
 
     &__decore {
@@ -53,6 +78,12 @@
         left: -965px;
         min-width: 10636px;
         animation: decoreAnimation 15s linear infinite;
+        @media (max-width: 600px) {
+            font-weight: 700;
+            font-size: 132.812px;
+            line-height: 100%;
+            bottom: -10px;
+        }
     }
 }
 
